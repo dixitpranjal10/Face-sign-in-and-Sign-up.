@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Recognition Sign-In/Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Facial Recognition Sign-In/Sign-Up</h1>
+        <div class="form">
+            <h2>Sign In</h2>
+            <input type="file" accept="image/*" id="signInImage" onchange="processSignInImage(event)">
+            <button onclick="signIn()">Sign In</button>
+        </div>
+        <div class="form">
+            <h2>Sign Up</h2>
+            <input type="file" accept="image/*" id="signUpImage" onchange="processSignUpImage(event)">
+            <button onclick="signUp()">Sign Up</button>
+        </div>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
